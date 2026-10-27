@@ -1,0 +1,4 @@
+type,tool_wear_max_min,power_min_w,power_max_w,rpm_min,rpm_max,torque_min_nm,torque_max_nm,torque_x_wear_max,min_rpm_if_temp_diff_8K,setpoint_rpm,setpoint_torque_nm,setpoint_power_w,safe_share_of_supported
+L,202,4750.0,7750.0,1237.5,1837.5,25.5,54.0,10908.0,1390.0,1487.5,43.5,6776.022654711485,0.5461538461538461
+M,202,4750.0,8000.0,1237.5,1837.5,25.5,58.5,11817.0,1390.0,1500.0,42.5,6675.88438887831,0.5443438914027149
+H,202,4750.0,7750.0,1237.5,1837.5,25.5,54.0,10908.0,1390.0,1500.0,42.5,6675.88438887831,0.5402714932126697

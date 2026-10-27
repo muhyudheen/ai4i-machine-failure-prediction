@@ -1,0 +1,6 @@
+mode,name,positives,chance PR-AUC,PR-AUC,ROC-AUC
+TWF,Tool wear failure,46,0.0046,0.095 ± 0.033,0.967 ± 0.012
+HDF,Heat dissipation failure,115,0.0115,0.994 ± 0.008,1.000 ± 0.000
+PWF,Power failure,95,0.0095,1.000 ± 0.000,1.000 ± 0.000
+OSF,Overstrain failure,98,0.0098,0.998 ± 0.005,1.000 ± 0.000
+RNF,Random failure,19,0.0019,0.011 ± 0.013,0.542 ± 0.114
