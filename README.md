@@ -3,7 +3,8 @@
 Predict machine failure from process parameters, explain which parameters drive it, and recommend
 low-risk operating ranges, using the **AI4I 2020 Predictive Maintenance Dataset** (UCI id 601).
 
-**Live dashboard:** _<add Streamlit Community Cloud link here>_
+**Live dashboard:** **https://ai4i-machine-failure-prediction.streamlit.app/** (hosted on Streamlit Community Cloud;
+the first visit after a few idle days takes about 30 s to wake the app)
 
 ---
 
@@ -206,7 +207,7 @@ Dashboard:
 streamlit run app.py
 ```
 
-**Deploying to Streamlit Community Cloud:** push the repo to GitHub, including `models/`, `reports/` and `data/`; they
-are small (a few MB). Create an app pointing at `app.py`, and pick **Python 3.13** under *Advanced settings* (the version
-the environment was built and pinned with). The pickled models need the exact pinned scikit-learn version, which
-`requirements.txt` guarantees.
+**Deployed on Streamlit Community Cloud** at https://ai4i-machine-failure-prediction.streamlit.app/, from this
+repo's `main` branch (every push redeploys). Settings: main file `app.py`, **Python 3.13** under *Advanced settings* (the
+version the environment was built and pinned with). `models/`, `reports/` and `data/` are committed because the app reads
+them; the pickled models need the exact pinned scikit-learn version, which `requirements.txt` guarantees.
