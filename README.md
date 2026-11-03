@@ -185,6 +185,7 @@ Figures: `16_risk_surfaces.png`, `17_hdf_surface.png`, `18_tool_wear_risk.png`, 
 │   ├── metrics.md             # full metric tables + model/threshold justification
 │   └── *.csv                  # CV folds/summary, OOF predictions, operating ranges, mode-model CV
 ├── PROJECT_GUIDE.pdf          # plain-language walkthrough: every decision, the code, the dashboard, Q&A
+├── predict_example.py         # load the trained model and score new runs (start here to use the model)
 ├── app.py                     # Streamlit dashboard
 ├── requirements.txt           # pinned runtime dependencies
 └── requirements-dev.txt       # + notebook tooling
@@ -201,6 +202,12 @@ python -m venv .venv
 Then run the notebooks in order (01 → 02 → 03), from the `notebooks/` folder. All randomness is seeded
 (`RANDOM_STATE = 42`) and versions are pinned, so the numbers above reproduce exactly (verified by re-running notebook 02).
 Notebook 02 takes about 30 min on a laptop CPU, mostly the nested hyper-parameter search; 01 and 03 take a few minutes.
+
+Use the trained model (no retraining needed). `models/final_model.joblib` is the full scikit-learn pipeline, and it
+needs `src/` beside it and the pinned versions:
+```bash
+python predict_example.py
+```
 
 Dashboard:
 ```bash
